@@ -1,5 +1,5 @@
 # Create EC2 Instance - Amazon2 Linux
-resource "aws_instance" "my-ec2-vm" {
+resource "aws_instance" "my-ec2" {
   ami           = data.aws_ami.amzlinux.id 
   instance_type = var.instance_type
   count = 1
